@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" label="PacEasyRequest" max_length="40" name="x_58872_needit_paceasyrequest" sizeclass="8" type="collection">
+        <element choice="1" label="Importance" max_length="4000" name="importance" type="glide_list">
+            <choice>
+                <element inactive_on_update="false" label="Important" sequence="0" value="Important"/>
+                <element inactive_on_update="false" label="Very Important" sequence="1" value="Very Important"/>
+                <element inactive_on_update="false" label="Extremely Important" sequence="2" value="Extremely Important"/>
+                <element inactive_on_update="false" label="Urgent" sequence="3" value="Urgent"/>
+            </choice>
+        </element>
+        <element label="ParentName" max_length="40" name="parentname" type="string"/>
+        <element label="RequestNumber" mandatory="true" max_length="100" name="requestnumber" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Title" max_length="200" name="title" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

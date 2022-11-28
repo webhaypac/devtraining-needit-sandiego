@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_58872_needit_paceasyrequest" label="IT Requests" max_length="40" name="x_58872_needit_it_requests" sizeclass="4" type="collection">
+        <element label="ChildName" max_length="40" name="childname" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>
