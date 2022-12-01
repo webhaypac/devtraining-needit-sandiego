@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="NeedIt Experience">7f43e48497a311108c8d50081153af66</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Simple List">8aa5244897a311108c8d50081153af10</macroponent>
+        <macroponent_config>{
+  "listView" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>Simple List default - 3.0.0 preview.</name>
+        <order>9999</order>
+        <parent_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen display_value="Simple List default">8714a4c497a311108c8d50081153af49</rollback_screen>
+        <screen_condition/>
+        <screen_type display_value="Simple List">cf14e44497a311108c8d50081153af28</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-28 18:18:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4aa5244897a311108c8d50081153af12</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Simple List default - 3.0.0 preview.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_screen_4aa5244897a311108c8d50081153af12</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-28 18:18:36</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=4aa5244897a311108c8d50081153af12"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>831b3e7adb4dbbc452cec5970596191a</instance_id>
+        <instance_name>dev84424</instance_name>
+        <name>sys_ux_screen_4aa5244897a311108c8d50081153af12</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="NeedIt Experience">7f43e48497a311108c8d50081153af66</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Simple List">8aa5244897a311108c8d50081153af10</macroponent><macroponent_config>{
+  "listView" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>Simple List default - 3.0.0 preview.</name><order>9999</order><parent_macroponent display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen display_value="Simple List default">8714a4c497a311108c8d50081153af49</rollback_screen><screen_condition/><screen_type display_value="Simple List">cf14e44497a311108c8d50081153af28</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-11-28 18:18:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4aa5244897a311108c8d50081153af12</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Simple List default - 3.0.0 preview.</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ux_screen_4aa5244897a311108c8d50081153af12</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-11-28 18:18:36</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=4aa5244897a311108c8d50081153af12"/></record_update>]]></payload>
+        <payload_hash>1384425547</payload_hash>
+        <record_name>Simple List default - 3.0.0 preview.</record_name>
+        <reverted_from/>
+        <source>c75a06aa971211108c8d50081153afdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-28 18:18:36</sys_created_on>
+        <sys_id>23a5644897a311108c8d50081153afad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184bf765f620000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-28 18:18:36</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>e7a5644897a31110fb61208eb06f08ac</update_guid>
+        <update_guid_history>e7a5644897a31110fb61208eb06f08ac:1384425547,86a5244842a311107a8143ad14bb0a14:700832392</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-28 18:18:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>5eadc6dedb7946d0aa21774369d0aca4</sys_id>
+        <sys_metadata>4aa5244897a311108c8d50081153af12</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Simple List default - 3.0.0 preview.</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_4aa5244897a311108c8d50081153af12</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_4aa5244897a311108c8d50081153af12">23a5644897a311108c8d50081153afad</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-28 18:18:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

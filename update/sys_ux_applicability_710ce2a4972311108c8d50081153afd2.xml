@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_58872_needit.Special Occasions User</api_name>
+        <description>Audience of Special Occasion application users</description>
+        <name>Special Occasions User</name>
+        <roles>168e57609f213200bde5f79ff57fcfb4,b05926fa0a0a0aa7000130023e0bde98</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-30 17:23:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>710ce2a4972311108c8d50081153afd2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Special Occasions User</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_applicability_710ce2a4972311108c8d50081153afd2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-01 01:18:24</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>
