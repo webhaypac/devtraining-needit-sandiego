@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="NeedIt-template Config">d9e4f622976711108c8d50081153af75</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Agent assist">3cd53a62976711108c8d50081153aff4</macroponent>
+        <macroponent_config>{
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>agent-assist default - 3.0.0 preview.</name>
+        <order>9999</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen display_value="agent-assist default">6cc53e62976711108c8d50081153af18</rollback_screen>
+        <screen_condition/>
+        <screen_type display_value="agent-assist">e4c53662976711108c8d50081153afc9</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-06 23:13:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8d53a62976711108c8d50081153aff6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>agent-assist default - 3.0.0 preview.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_screen_f8d53a62976711108c8d50081153aff6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-06 23:13:13</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=f8d53a62976711108c8d50081153aff6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>831b3e7adb4dbbc452cec5970596191a</instance_id>
+        <instance_name>dev84424</instance_name>
+        <name>sys_ux_screen_f8d53a62976711108c8d50081153aff6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="NeedIt-template Config">d9e4f622976711108c8d50081153af75</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="Agent assist">3cd53a62976711108c8d50081153aff4</macroponent><macroponent_config>{
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>agent-assist default - 3.0.0 preview.</name><order>9999</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen display_value="agent-assist default">6cc53e62976711108c8d50081153af18</rollback_screen><screen_condition/><screen_type display_value="agent-assist">e4c53662976711108c8d50081153afc9</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-12-06 23:13:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f8d53a62976711108c8d50081153aff6</sys_id><sys_mod_count>1</sys_mod_count><sys_name>agent-assist default - 3.0.0 preview.</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ux_screen_f8d53a62976711108c8d50081153aff6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-12-06 23:13:13</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=f8d53a62976711108c8d50081153aff6"/></record_update>]]></payload>
+        <payload_hash>-750998283</payload_hash>
+        <record_name>agent-assist default - 3.0.0 preview.</record_name>
+        <reverted_from/>
+        <source>c75a06aa971211108c8d50081153afdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-06 23:13:13</sys_created_on>
+        <sys_id>c5d57e62976711108c8d50081153afd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184e9b6f8860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-06 23:13:13</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>8dd57e62a667111039b3e56e6fc62acf</update_guid>
+        <update_guid_history>8dd57e62a667111039b3e56e6fc62acf:-750998283,cdd57e62166711103805ad1e19d54c95:188485455</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-06 23:13:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>1f559c68097a4050a613029c28952b04</sys_id>
+        <sys_metadata>f8d53a62976711108c8d50081153aff6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>agent-assist default - 3.0.0 preview.</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_f8d53a62976711108c8d50081153aff6</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_f8d53a62976711108c8d50081153aff6">c5d57e62976711108c8d50081153afd0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-06 23:13:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

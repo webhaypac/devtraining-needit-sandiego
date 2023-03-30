@@ -2127,12 +2127,184 @@
       "styles" : {
         "width" : "90%"
       }
+    }, {
+      "elementId" : "container_1",
+      "elementLabel" : "Container 1",
+      "propertyValues" : {
+        "ariaRegionName" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
+        },
+        "includeAriaHeading" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "ariaRegionHeadingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "section"
+        },
+        "ariaRole" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "repeater_1",
+          "elementLabel" : "Repeater 1",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : null,
+          "definition" : {
+            "id" : "",
+            "type" : "REPEATER"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "data_row_1",
+              "elementLabel" : "Data row 1",
+              "propertyValues" : {
+                "title" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Data Row",
+                    "comment" : ""
+                  }
+                },
+                "titleHeadingLevel" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "1"
+                },
+                "titleStyleVariant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "header-secondary"
+                },
+                "layout" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "horizontal"
+                },
+                "data" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "cardHeightHorizontal" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "sm"
+                },
+                "maxVisibleCardsHorizontal" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "4"
+                },
+                "minCardPixelWidth" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 254
+                },
+                "dataBrokerIsLoading" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "noDataMessage" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "No content to display.",
+                    "comment" : ""
+                  }
+                },
+                "viewAllLinkLabel" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "View All",
+                    "comment" : ""
+                  }
+                },
+                "noBox" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "daClientActionContract" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : null,
+              "definition" : {
+                "id" : "fae56519b74e7995b69ae7cf66e280f9",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : null
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "isNonDestructive" : false,
+          "repeatWith" : {
+            "type" : "JSON_LITERAL",
+            "value" : [ {
+              "task" : "A"
+            }, {
+              "task" : "B"
+            } ]
+          },
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [{"element_id":"repeater_1","styles":{}}],
+            "root" : null,
+            "rules" : null,
+            "styles" : {"flex-direction":"column"},
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          },
+          "version" : "3.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"list","styles":{}}],
+        "items" : [{"element_id":"list","styles":{}},{"element_id":"container_1","styles":{}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"column","align-items":"center"},
@@ -2153,7 +2325,54 @@
   }
 } ]</composition>
         <da_relay_models/>
-        <data>[ ]</data>
+        <data>[ {
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "look_up_records_1",
+  "elementLabel" : "Look Up Records 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_58872_needit_needit"
+    },
+    "encodedQuery" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "100"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
         <dispatched_events>0844d2741b554910a047ca641a4bcb87</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events/>
@@ -2180,6 +2399,9 @@
   "message" : "Active NeedIts by Request type",
   "comment" : ""
 }, {
+  "message" : "Data Row",
+  "comment" : ""
+}, {
   "message" : "NeedIt",
   "comment" : ""
 }, {
@@ -2192,10 +2414,16 @@
   "message" : "NeedIts Needed This Month",
   "comment" : ""
 }, {
+  "message" : "No content to display.",
+  "comment" : ""
+}, {
   "message" : "Overdue NeedIts",
   "comment" : ""
 }, {
   "message" : "The NeedIt Experience",
+  "comment" : ""
+}, {
+  "message" : "View All",
   "comment" : ""
 }, {
   "message" : "View NeedIt records that need to be approved",
@@ -2232,13 +2460,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-10 20:06:36</sys_created_on>
         <sys_id>ca7e2e181b0d0510b81fdce7cc4bcb47</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_ca7e2e181b0d0510b81fdce7cc4bcb47</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-01 21:32:43</sys_updated_on>
+        <sys_updated_on>2023-01-02 16:38:35</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

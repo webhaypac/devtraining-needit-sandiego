@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "wsCanvasSidebar",
+  "elementLabel" : "UXR Workspace sidebar to place the Inbox",
+  "propertyValues" : {
+    "opened" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "opened" ],
+        "category" : "props"
+      }
+    },
+    "dockingEnabled" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "containerProps" : {
+      "type" : "JSON_LITERAL",
+      "value" : {
+        "border" : "none"
+      }
+    },
+    "heading" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "status" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "22cbe078bfc4dcec769e56379b662af7",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "agent_inbox_1",
+      "elementLabel" : "Agent Inbox 1",
+      "propertyValues" : {
+        "user" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "user" ],
+            "category" : "session"
+          }
+        },
+        "activeRecords" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "activeRecords" ],
+            "category" : "props"
+          }
+        },
+        "maxTabLimit" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "maxTabLimit" ],
+            "category" : "props"
+          }
+        },
+        "enableDesktopNotification" : {
+          "type" : "CLIENT_TRANSFORM_SCRIPT",
+          "script" : {
+            "apiVersion" : "1.0.0",
+            "inlineScript" : "/**\n  * @param {params} params\n  * @param {api} params.api\n  * @param {any} params.imports\n  */\nfunction evaluateProperty({api}) {\n  // if Polaris is enabled, enableDesktopNotification should be false for agent inbox component\n  return !api.data.look_up_properties_1.properties.booleanValue;\n}",
+            "scriptSysId" : null
+          }
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "inboxUpdated",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_omnich_interact.SN_AGENT_INBOX#INBOX_UPDATED",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_omnich_interact.SN_AGENT_INBOX#INBOX_UPDATED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "sn_canvas_chrome.PRIME_NAV_SOURCE_CHANGED",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "id" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "inbox"
+                },
+                "status" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "badge" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "count" : {
+                      "type" : "EVENT_PAYLOAD_BINDING",
+                      "binding" : {
+                        "address" : [ "num_work_items" ]
+                      }
+                    }
+                  }
+                },
+                "select" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "show" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              }
+            },
+            "sysId" : "35dfd1eb04ed4060e402ca8bf139973e"
+          },
+          "operation" : null,
+          "targetId" : "clbcutigtaaeeccjjddffhheecfpdeewjjm",
+          "type" : "EVENT"
+        } ]
+      }, {
+        "eventMappingId" : "presenceStateUpdated",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_omnich_interact.SN_AGENT_INBOX#PRESENCE_STATE_UPDATED",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_omnich_interact.SN_AGENT_INBOX#PRESENCE_STATE_UPDATED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "sn_canvas_chrome.PRIME_NAV_SOURCE_CHANGED",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "id" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "inbox"
+                },
+                "status" : {
+                  "type" : "EVENT_PAYLOAD_BINDING",
+                  "binding" : {
+                    "address" : [ "availability_type" ]
+                  }
+                },
+                "badge" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "select" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "show" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              }
+            },
+            "sysId" : "35dfd1eb04ed4060e402ca8bf139973e"
+          },
+          "operation" : null,
+          "targetId" : "clbcutigtaaeeccaddffhheegnzmvysu",
+          "type" : "EVENT"
+        } ]
+      }, {
+        "eventMappingId" : "workItemAccepted",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_omnich_interact.SN_AGENT_INBOX#WORK_ITEM_ACCEPTED",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_omnich_interact.SN_AGENT_INBOX#WORK_ITEM_ACCEPTED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "sn_canvas_core.NAV_ITEM_SELECTED",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "route" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "record"
+                },
+                "fields" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "table" : {
+                      "type" : "EVENT_PAYLOAD_BINDING",
+                      "binding" : {
+                        "address" : [ "document_table" ]
+                      }
+                    },
+                    "sysId" : {
+                      "type" : "EVENT_PAYLOAD_BINDING",
+                      "binding" : {
+                        "address" : [ "document_id" ]
+                      }
+                    }
+                  }
+                },
+                "params" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "redirect" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "passiveNavigation" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "title" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "multiInstField" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "targetRoute" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "external" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                }
+              }
+            },
+            "sysId" : "8b82bf18e5276c8e423b6e4e0889b463"
+          },
+          "operation" : null,
+          "targetId" : "clbcutiguaaeeccbddffhheeibtffdrsb",
+          "type" : "EVENT"
+        } ]
+      } ],
+      "slot" : null,
+      "definition" : {
+        "id" : "c6cef271e7215bc72a679d5f864f4663",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isHero" : false,
+      "isNonDestructive" : true,
+      "styles" : {
+        "height" : "100%"
+      }
+    } ],
+    "layout" : null
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "268e647553121010c495ddeeff7b1250",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "look_up_properties_1",
+  "elementLabel" : "Look Up Properties 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "properties" : {
+      "type" : "JSON_LITERAL",
+      "value" : "glide.ui.polaris.experience"
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events>35dfd1eb04ed4060e402ca8bf139973e,8b82bf18e5276c8e423b6e4e0889b463</dispatched_events>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"rules":{},"styles":{"overflow":"hidden","height":"100%"},"element_id":"wsCanvasSidebar"}],
+    "root" : null,
+    "rules" : null,
+    "styles" : {"height":"100%","display":"grid","grid-template-columns":"minmax(0, max-content)","grid-template-rows":"1fr","grid-gap":"0px","overflow":"hidden"},
+    "templateId" : null,
+    "type" : "grid"
+  },
+  "version" : "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Inbox</name>
+        <props>[ {
+  "name" : "opened",
+  "label" : "Opened",
+  "fieldType" : "boolean",
+  "typeMetadata" : null,
+  "valueType" : "boolean",
+  "mandatory" : false,
+  "defaultValue" : "false",
+  "description" : "Represents the visible state for Inbox",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "activeRecords",
+  "label" : "activeRecords",
+  "fieldType" : "json",
+  "typeMetadata" : null,
+  "valueType" : "array",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : null,
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "maxTabLimit",
+  "label" : "Main tab max limit",
+  "fieldType" : "number",
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "Main tab maximum tab limit.",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "enableDesktopNotification",
+  "label" : "Enable desktop notification",
+  "fieldType" : "boolean",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "Enable/disable work item desktop notifications. Should be set to false when using this component in a polaris-enabled workspace",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+} ]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-06 23:30:28</sys_created_on>
+        <sys_id>42c9f2a6976711108c8d50081153af41</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Inbox</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_macroponent_42c9f2a6976711108c8d50081153af41</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-06 23:30:29</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

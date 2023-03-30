@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "wsNotificationToast",
+  "elementLabel" : "Notification Toast",
+  "propertyValues" : {
+    "toastItem" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "toastItem" ],
+        "category" : "props"
+      }
+    },
+    "displayLength" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "toastDisplayLength" ],
+        "category" : "props"
+      }
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "notificationToastItemClicked",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_canvas_chrome.NOTIFICATION_ITEM_CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_canvas_chrome.NOTIFICATION_ITEM_CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "5b45b262976711108c8d50081153aff7"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "openNotificationItem",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : "",
+  "definition" : {
+    "id" : "53f47c4ae891d266dcedd3758bce2d5d",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : {
+    "top" : "80px",
+    "position" : "fixed",
+    "z-index" : "1000"
+  }
+}, {
+  "elementId" : "wsCanvasSidepanel",
+  "elementLabel" : "UXR Workspace sidepanel to place notifications",
+  "propertyValues" : {
+    "backdrop" : false,
+    "containerProps" : {
+      "border" : "none",
+      "padding" : "0",
+      "top" : "48px",
+      "height" : "calc(100vh - 48px)"
+    },
+    "opened" : "@context.props.notificationTrayDisplayed"
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "canvasSidePanelToggleOpened",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_canvas_chrome.SN_CANVAS_SIDEPANEL#TOGGLE_OPENED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_canvas_chrome.SN_CANVAS_SIDEPANEL#TOGGLE_OPENED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_canvas_chrome.NOTIFICATION_TRAY_TOGGLED",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "opened" : {
+              "type" : "EVENT_PAYLOAD_BINDING",
+              "binding" : {
+                "address" : [ "opened" ]
+              }
+            }
+          }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : null,
+      "type" : "EVENT"
+    } ]
+  } ],
+  "slot" : null,
+  "definition" : {
+    "id" : "ea37a686248ffa2fa09dbf2de25e37df",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "wsNotificationTray",
+      "elementLabel" : "Notification Tray",
+      "propertyValues" : {
+        "notificationQueue" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "notificationQueue" ],
+            "category" : "props"
+          }
+        },
+        "route" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "notificationUIRoute" ],
+            "category" : "props"
+          }
+        },
+        "isLoading" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "notificationTrayIsLoading" ],
+            "category" : "props"
+          }
+        },
+        "opened" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "notificationTrayDisplayed" ],
+            "category" : "props"
+          }
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "notificationTrayItemClicked",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_canvas_chrome.NOTIFICATION_ITEM_CLICKED",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_canvas_chrome.NOTIFICATION_ITEM_CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "5b45b262976711108c8d50081153aff7"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "openNotificationItem",
+          "type" : "CLIENT_SCRIPT"
+        } ]
+      } ],
+      "slot" : "content",
+      "definition" : {
+        "id" : "4d3ff02cf77258cf74899775dd371d58",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : false
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : null
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "367f89e30b102010a8b1c96237673a85",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "dynamic_routing_workspace_notification",
+  "elementLabel" : "Dynamic Routing Workspace Notification",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "routeConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "routeConfigId" ],
+        "category" : "app"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout/>
+        <macroponent_dependencies/>
+        <name>Workspace notification</name>
+        <props>[ {
+  "name" : "notificationTrayDisplayed",
+  "label" : "Opened",
+  "fieldType" : "boolean",
+  "typeMetadata" : null,
+  "valueType" : "boolean",
+  "mandatory" : true,
+  "defaultValue" : "false",
+  "description" : "Represents the visible state for Notification Tray",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "notificationQueue",
+  "label" : "Notification Queue",
+  "fieldType" : "json",
+  "typeMetadata" : null,
+  "valueType" : "array",
+  "mandatory" : true,
+  "defaultValue" : "[]",
+  "description" : "Represents the visible state for Notification Tray",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "notificationUIRoute",
+  "label" : "Route",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : true,
+  "defaultValue" : null,
+  "description" : "UI Notification route to display notifications for.",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "notificationTrayIsLoading",
+  "label" : "Is Loading",
+  "fieldType" : "boolean",
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : true,
+  "defaultValue" : null,
+  "description" : "Indicates whether there are notifications loading.",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "toastItem",
+  "label" : "Toast Item",
+  "fieldType" : "json",
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : true,
+  "defaultValue" : null,
+  "description" : "UI Notification Toast Item",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "toastDisplayLength",
+  "label" : "Toast Display Length",
+  "fieldType" : "number",
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "UI Notification Toast Item Display Length",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+} ]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{
+  "bare" : true
+}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-06 23:10:53</sys_created_on>
+        <sys_id>8b45f622976711108c8d50081153af5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Workspace notification</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_macroponent_8b45f622976711108c8d50081153af5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-06 23:10:54</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

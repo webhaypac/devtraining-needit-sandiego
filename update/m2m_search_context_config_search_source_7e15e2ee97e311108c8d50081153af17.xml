@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>200</order>
+        <search_context_config display_value="NeedIt - Workspace Search">bf05aeaecce31110bf7a2452c3688edd</search_context_config>
+        <source display_value="NeedIt - x_58872_needit_needit_task">7a15a2ee97e311108c8d50081153afbd</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-06 22:00:09</sys_created_on>
+        <sys_id>7e15e2ee97e311108c8d50081153af17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_7e15e2ee97e311108c8d50081153af17</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-12-06 22:00:09</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>
